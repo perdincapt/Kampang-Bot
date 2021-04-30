@@ -24,10 +24,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    f"**`! 𝗔𝗙𝗞 🐨\n Sedang Sibuk, Tunggu {ALIVE_NAME} Online Kembali`**",
-    f"**`! 𝗔𝗙𝗞 🐨\n Mohon Maaf {ALIVE_NAME} Sedang Sibuk\n Sedang Menjalankan Perintah Tuhan!!**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Sedang Sibuk, Tunggu Aje {ALIVE_NAME} Online Kembali`**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Mohon Maaf {ALIVE_NAME} Sedang Sibuk\n Sedang Jaga Empang TMII**",
     f"**`! 𝗔𝗙𝗞 🐨\n {ALIVE_NAME} Sedang Melakukan Perintah Tuhan\n Tunggu {ALIVE_NAME} Online Kembali !!!!!`**",
-    f"**`! 𝗔𝗙𝗞 🐨\n Maaf {ALIVE_NAME} Sedang Sibuk!!`**",
+    f"**`! 𝗔𝗙𝗞 🐨\n Maaf {ALIVE_NAME} Lagi Mancing di Empang!!`**",
 ]
 
 
@@ -62,7 +62,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**! 𝗔𝗙𝗞  🐨**\n╭✠╼━━━━━━❖━━━━━━━✠╮\n{ALIVE_NAME} Sibuk Dulu Gaes...\
+        await afk_e.edit(f"**! 𝗔𝗙𝗞  🐨**\n╭✠╼━━━━━━❖━━━━━━━✠╮\n{ALIVE_NAME} Mancing Dulu Bre...\
         \n𝘼𝙡𝙖𝙨𝙖𝙣: `{string}`\n╰✠╼━━━━━━❖━━━━━━━✠╯")
     else:
         await afk_e.edit(f"**! 𝗔𝗙𝗞  🐨**\n╭✠╼━━━━━━❖━━━━━━━✠╮\n{ALIVE_NAME} Sibuk Dulu Kawan...\n╰✠╼━━━━━━❖━━━━━━━✠╯")
